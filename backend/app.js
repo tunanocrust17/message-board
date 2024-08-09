@@ -10,6 +10,9 @@ app.set('view engine', 'ejs')
 
 app.use(express.urlencoded({ extended: true }));
 
+const assetsPath = path.join(__dirname, '../frontend', 'public');
+app.use(express.static(assetsPath));
+
 app.use('/', indexRouter)
 app.use('/new', newMessage)
 
