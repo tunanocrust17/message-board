@@ -1,10 +1,17 @@
 const messages = [
-    {userName: "bobby",
-        userMessage: "woah this app rocks!",
+    {
+        userName: "Rocky",
+        userMessage: "Don't lose it, reuse it!",
         timeStamp: new Date()
     },
-    {userName: "peppa",
+    {
+        userName: "peppa",
         userMessage: "everyone loves castles!",
+        timeStamp: new Date()
+    },
+    {
+        userName: "Chase",
+        userMessage: "Chase is on the case!",
         timeStamp: new Date()
     }
 ]
