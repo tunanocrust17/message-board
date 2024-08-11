@@ -1,0 +1,85 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.message-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.message-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.message-item:hover {
+    background-color: #f0f0f0;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.username {
+    font-weight: bold;
+    color: #333;
+}
+
+.date {
+    font-style: italic;
+    color: #999;
+}
+
+.message-content {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.4;
+}
+
+
+.message-form {
+    color: red;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 2px solid #0056b3; /* Thick border on top of footer */
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
