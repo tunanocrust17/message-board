@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>Messages Home</title>
 </head>
 <body>
-    <div>
-        <ul>
-            <% for (let i = 0; i < messages.length; i++ ) { %>
-                <div>
-                    <li>User: <%= messages[i].userName %></li>
-                    <li>Message: <%= messages[i].userMessage %> </li>
-                </div>
-            <% } %>
-        </ul>
-    </div>
-    <a href="/new" class="button">New Message</a>
+        <div class="main">
+            <ul class="message-list">
+                <% for (let i = 0; i < messages.length; i++ ) { %>
+                    <li class="message-item">
+                        <div class="message-header">
+                            <span class="username">From: <%= messages[i].userName %></span>
+                            <span class="date">Date: <%= messages[i].timeStamp %></span>
+                        </div>
+                        <div class="message-content">
+                            <span>Message: <%= messages[i].userMessage %> </span>
+                        </div>
+                    </li>
+                <% } %>
+            </ul>
+            <a href="/new" class="button">New Message</a>
+        </div>
+
+    <%- include ('components/footer', {year:year}) %>
+        
+
 </body>
 </html>
