@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('node:path')
 const { indexRouter } = require( './routes/indexRouter')
 const {newMessage} = require('./routes/newMessageRouter')
+const {viewMessage} = require('./routes/messageRouter')
 
 const app = express()
 
@@ -15,6 +16,7 @@ app.use(express.static(assetsPath));
 
 app.use('/', indexRouter)
 app.use('/new', newMessage)
+app.use('/message', viewMessage)
 
 const PORT = 3000
 app.listen(PORT, console.log(`Server running on port ${PORT}`))
